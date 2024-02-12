@@ -3,7 +3,7 @@ import { client, urlFor } from "@/app/lib/sanity"
 import { PortableText } from "@portabletext/react"
 import Image from "next/image"
 
-export const revalidate = 30
+export const revalidate = 3600
 
 async function getData(slug: string) {
     const query = `
